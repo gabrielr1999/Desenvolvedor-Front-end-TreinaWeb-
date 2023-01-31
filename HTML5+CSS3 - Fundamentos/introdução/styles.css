@@ -1,0 +1,132 @@
+/* Para etilizar um id o seletor é: # */
+/* Para estilizar uma classe o seletor é: . */
+/* O seletor "*" ele indicar para selecionar tudo o que existe */
+
+li > div > span { /* Filho direto */
+    background-color: red;
+    color: white;
+}
+li span{ /* Pode ser qualquer herdeiro */ 
+    background-color: blue;
+    color: white;
+}
+
+h1 + span{ /* Seleciona um span que tenha antes dele um elemento h1. Se tiver um h2 (por exemplo) no meio deles, a estilização não funciona */
+    background-color: black;
+    color: white;
+}
+
+h1 ~ span{ /* Para o ~ não interessa se ele tem outro elemento no meio */
+    background-color: pink;
+    color: white;
+}
+
+[readonly]{ /* Pegando um atributo */
+    background-color: red;
+    color: white;
+}
+
+input[class]{ /* Selecionar um elemento que possui algum atributo */
+    background-color: black;
+    color: white;
+}
+
+input[type="number"]{
+    background-color: green;
+    color: white;
+}
+
+a[href*="contato" i]{ /* ^ = serve para pegar a palavra no começo / $ = servepara pegar a palavra no final / * = serve para pegar em qualquer lugar / i = ele trata tudo como a mesma coisa (maiúscula e minúscula) */
+    background-color: blue;
+    color: white;
+}
+
+/* Pseudo-Classes */
+h1:active{ /* Serve para selecionar o elemento que está ativo, que está pressionando o click do mouse neste elemento */
+color: green;
+}
+
+input:checked + a{
+    background-color: white;
+    color: red;
+}
+
+h1:empty{ /* Se o h1 estiver vazio a estilização funciona */
+    border: red solid 5px;
+}
+
+input:disabled{
+    background-color: #333;
+}
+
+input:focus{ /* indica um elemnto focado */
+    background-color: red;
+}
+
+a:hover{ /* Estilizar o elemento quando o mouse passa por cima */
+background-color: yellow;
+}
+
+li:last-child{ /* first = seleciona o priemiro filho / last = seleciona o último filho */
+    background-color: black;
+    color: white;
+}
+
+li:nth-child(2){ 
+    background-color: yellow;
+    color: white;
+}
+
+/* li:nth-child(even){  /* even = Pega os filhos PARES / odd = Pega os filhos IMPARES
+    background-color: yellow;
+    color: white;
+} */
+
+/* li:not(:hover){
+    background-color: pink;
+    color: white;
+} */
+
+/* ----------------------------- */
+
+/* .cor{
+    background-color: rgb(50,100,20);
+    color: white;
+} */
+
+.cor{
+    background-color: rgb(50 100 20 0.5); /* rgba adicona o Alfa, quanto menor o alfa mais transparente fica o elemento (entre 0 e 1) */
+    /* altera a cor de fundo de um elemento; */
+    color: black; /* altera a cor da fonte de um texto; */
+    border: 10px solid purple; /* altera a borda de um elemento; */
+    opacity: .5; /* Pega todo o elemento */
+    height: 20px;
+    width: 80px;
+}
+
+/* ------------------------------------------- */
+
+@font-face { /* fonte customizasda */
+    font-family: Pacifico;
+    src: url("fontes/Pacifico-Regular.ttf");
+}
+
+p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: Pacifico; */
+    /* font-family: 'Long Cang', cursive; */
+    /* font-style: italic;
+    font-weight: normal; /* peso da fonte 
+    text-align: right; /* alinhamento do texto 
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px red; */
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    letter-spacing: 2px; /* espaçamento das letras */
+    word-spacing: 10px; /* Espaçamento das palavras */
+    line-height: 300%; /* altura das linhas */
+    /* word-break: break-all;  Como uma palavra deve ser quebrada */
+    /* white-space: inherit; A propriedade CSS white-space é usada para descrever como os espaços em branco dentro dos elementos são manipulados.; */
+}

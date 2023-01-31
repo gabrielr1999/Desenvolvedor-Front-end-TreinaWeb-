@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css"><style></style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>35</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h1>Tabela horizontal</h1>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <td>Maria</td>
+            <td>João</td>
+            <td>Pedro</td>
+        </tr>
+        <tr>
+            <th>Idade</th>
+            <td>20</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Avaçado</h1>
+
+    <table class="tabela-1">
+        <thead>
+            <tr>
+                <th colspan="7">Janeiro</th> <!-- atributo define o número de colunas que uma célula deve abranger -->
+            </tr>
+            <tr>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tabela-2">
+        <tr>
+            <th>Escola</th>
+            <td>TreinaWeb</td>
+            <td>AvMakers</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone</th> <!-- atributo especifica o número de linhas que uma célula deve abranger. -->
+            <td>8199999-9999</td>
+            <td>8191111-1111</td>
+        </tr>
+        <tr>
+            <td>8199999-9999</td>
+            <td>8191111-1111</td>
+        </tr>
+    </table>
+
+    <table class="tabela-3">
+        <!-- <colgroup>  tag especifica um grupo de uma ou mais colunas em uma tabela para formatação. É útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha. 
+            <col span="1" style="background-color: rgb(255, 138, 138);">
+            <col span="3" style="background-color: rgb(156, 138, 255);">
+        </colgroup> -->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="tabela-3-1">
+        <!-- <colgroup>  tag especifica um grupo de uma ou mais colunas em uma tabela para formatação. É útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha. 
+            <col span="1" style="background-color: rgb(255, 138, 138);">
+            <col span="3" style="background-color: rgb(156, 138, 255);">
+        </colgroup> -->
+       
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+            </tr>
+     
+
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+                <td>99999-9999</td>
+                <td>R. 17</td>
+            </tr>
+
+    </table>
+</body>
+</html>
+
+<!-- 
+    tr = table row - linha da tabela 
+    td = table data cell - dados da celula da tabela
+    th = table head - cabeçalho da tabela
+    thead = table head - cabeçalho da tabela
+    tbody = table body - corpo da tabela
+    tfoot = table foot - rodapé da tabela
+-->

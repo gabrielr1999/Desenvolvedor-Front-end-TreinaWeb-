@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.lista-ordenada{
+    list-style: decimal; /* retira a numeração */
+}
+
+.lista-nao-ordenada{
+    /* list-style: square; */
+    list-style: url('img/circle.png');
+}
+
+.menu{
+    background-color: brown;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    /* justify-content: space-around; Espaçar os elementos */
+    gap: 20px; /* da um espaçamento e joga pro inicio */
+}

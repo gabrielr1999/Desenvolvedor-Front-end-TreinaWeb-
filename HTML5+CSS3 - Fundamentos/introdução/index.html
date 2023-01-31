@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!--Isso é um documento html -->
+<html lang="pt-BR"> <!-- Lingua do documento -->
+<head> <!-- Cabeçalho do documento, é o elemento é inserido informação do documento -->
+    <meta charset="UTF-8"> <!-- Indica o navegador que o documento esta escrito por um grupo de caracters chamado UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controla o tamanho da tela em dispositivos móveis -->
+    <title>Meu Site</title> <!-- Título do documento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body> <!-- Corpo do documento -->
+
+    <h1>TreinaWeb</h1> <!-- Título -->
+    <h2>TreinaWeb</h2> <!-- Subtítulo -->
+
+    Olá Web <strong>Developers</strong>! <!-- Deixa em negrito -->
+    <br> <!-- Quebra de linha -->
+    Olá Web <em>Developers</em>! <!-- Deixa itálico -->
+    <br>
+    Olá Web <ins>Developers</ins>! <!-- Sublinha o texto (inserido)-->
+    <br>
+    Olá Web <del>Developers</del>! <!-- Risca o texto (removido) -->
+    <br>
+    Olá Web <small>Developers</small>! <!-- Deixa o texto pequeno -->
+    <br>
+    Olá Web Developers<sup>2</sup>! <!-- Deixa o texto um pouco acima -->
+    <br>
+    Olá Web Developers H<sub>2</sub>O! <!-- Deixa o texto um pouco embaixo -->
+    <br>
+    <q>Com grandes poderes vêm grandes responsbilidades</q> <!-- Citação -->
+
+    <p>Seja bem-vindo, <span id="nome">Akira</span></p> <!-- Span não tem um significado semantico, ele não altera o significado do texto  -->
+    <hr> <!-- Separa o conteúdo -->
+    <p>wwwtreianwebcombrcursos<wbr>html5css3fundamentos</p> <!-- Quebra o texto aonde exatamente você quer (quando estiver no responsivo)-->
+
+    <p>O <code>console.log</code> imprime um texto no console</p> <!-- Identifica que é um trecho de código -->
+
+    <p>Com <mark>grandes poderes</mark> vêm grandes responsbilidades</p> <!-- Marca o texto -->
+
+    <p>
+        <ruby> <!-- Permite adicionar a pronúncia/leitura de caracteres do leste asiático -->
+            水
+            <rt>Água</rt>
+        </ruby>
+    </p>
+
+    <p>
+        A tag <code>&lt;h1&gt;</code> serve para títulos
+    </p>
+    <figure> <!-- Adicionar mais significado às imagens -->
+        <img width="200" height="200" src="imagens/css3-html5-logo-initial.png" alt="Logo do HTML5"> <!-- Serve para exibir imagens. Passe o caminho da imagem no atributo “src”. É uma boa prática sempre adicionar a descrição da imagem no atributo “alt”. -->
+        <figcaption>Figura 1 - Logo do HTML5</figcaption> <!-- serve como legenda da imagem -->
+    </figure>
+
+    <p>Outro texto</p>
+
+    <hr>
+
+    <a href="#titulo1">Primeiro</a>
+    <a href="#titulo2">Segundo</a>
+    <a href="#titulo3">Terceiro</a>
+    <a href="mailto:meuemail@gmail.com">meu e-amil</a>
+    <a href="tel:+00000000000">meu contato</a>
+
+    <h2 id="titulo">Meu título 1</h2>
+    <p>texto 1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae commodo lorem. Etiam placerat rhoncus ligula. Aenean ut ante quis ligula scelerisque gravida. Nullam ultrices hendrerit posuere. Curabitur quis sem non odio viverra feugiat. Praesent eu eros auctor, iaculis orci ac, convallis diam. Proin tincidunt, massa vitae tincidunt hendrerit, tortor sapien consequat ligula, vel pretium nunc magna vel ipsum. In sed leo eget ipsum interdum maximus.</p>
+    <h2 id="titulo2">Meu título 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae commodo lorem. Etiam placerat rhoncus ligula. Aenean ut ante quis ligula scelerisque gravida. Nullam ultrices hendrerit posuere. Curabitur quis sem non odio viverra feugiat. Praesent eu eros auctor, iaculis orci ac, convallis diam. Proin tincidunt, massa vitae tincidunt hendrerit, tortor sapien consequat ligula, vel pretium nunc magna vel ipsum. In sed leo eget ipsum interdum maximus.</p>
+    <h2 id="titulo3">Meu título 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae commodo lorem. Etiam placerat rhoncus ligula. Aenean ut ante quis ligula scelerisque gravida. Nullam ultrices hendrerit posuere. Curabitur quis sem non odio viverra feugiat. Praesent eu eros auctor, iaculis orci ac, convallis diam. Proin tincidunt, massa vitae tincidunt hendrerit, tortor sapien consequat ligula, vel pretium nunc magna vel ipsum. In sed leo eget ipsum interdum maximus.</p>
+
+    <a href="contato.html" class="meu-link">Contato</a>
+    <a target="_blank" rel="noreferrer nooperner" href="https://google.com/contato" class="outra-classe">Google</a> <!-- blank (abrir em uma nova aba)-->
+    <a download="Logo HTML5.png" href="imagens/css3-html5-logo-initial.png">Download da imagem</a> <!-- Fazer um download de um arquivo -->
+
+    <hr>
+
+    <h1 class="abc">Seletores</h1>
+    <h2>meio</h2>
+    <span>Item fora da lista</span>
+    <ul> <!-- Lista não ordenada-->
+        <li> <!-- Item da lista -->
+            <div>
+                <span>Item 1</span>
+            </div>
+            <span>Item 1.1</span>
+        </li>
+        <li>Item 2</li> 
+        <li>Item 3</li> 
+    </ul>
+
+    <input class="def" type="text" disabled>
+    <input type="text" readonly value="123">
+    <input type="number" value="123">
+    <input type="checkbox">
+    <a href="#" >Contato</a>
+    <input type="text" disabled>
+    <input type="text" value="123">
+
+    <hr>
+
+    <h1 class="cor">Cor</h1>
+
+    <hr>
+
+    <p>fdsfdsfdsfsdfdsfds fdsfdsfdsfdsfsfd fdsfdsfdsfdsfdsfdsfs fdsfdsfsdfsfsdfds fsdfdsfdsfdsfdsfdsfdsfdsfdsfdsfsd</p>
+
+</body>
+</html>
