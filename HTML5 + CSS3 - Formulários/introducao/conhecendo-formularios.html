@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Conhecendo os formulários
+    </h1>
+    <!-- Os formulários servem para criar uma comunicação entre o usuário e a página, através de dados inseridos. -->
+    <form>
+        <label for="usuarioNome">Nome</label>
+        <input type="text" id="usuarioNome" name="nome">
+
+        <br>
+
+        <label for="usuarioSenha">Senha</label>
+        <input type="password" id="usuarioSenha" name="senha">
+    </form>
+    <br>
+    <form>
+        <fieldset> <!-- A tag fieldset serve para podermos criar blocos de inputs dentro de um formulário. -->
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            <br>
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="rua">Rua</label>
+            <input type="text" id="rua">
+            <br>
+            <label for="numero">Número</label>
+            <input type="number" id="numero">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <!-- Submissão de formulários -->
+    <form action="./login.html" method="get" target="_blank">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <!-- <input type="submit" value="Logar"> -->
+        <button type="submit">Logar</button>
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Conhecendo outros campos</h1>
+    
+    <form>
+        <label for="comentario">Deixe seu comentário</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="50" rows="20"></textarea>
+    </form>
+
+    <br>
+
+    <form>
+        <label for="arquivo">Selecione um arquivo</label>
+        <br>
+        <!-- <input type="file" id="arquivo">  Possibilita que o usuário so selecione UM arquivo -->
+        <input type="file" id="arquivo" multiple> <!-- Possibilita que o usuário so selecione VÁRIOS arquivo -->
+    </form>
+
+    <br>
+
+    <form> 
+        <input type="checkbox" id="amarelo" checked> <!-- Ja vai aparecer marcado -->
+        <label for="amarelo">Amarelo</label>
+        <br>
+        <input type="checkbox" id="azul" checked disabled>  <!-- Ja vai aparecer marcado mas bloqueado para marcar ou desmarcar -->
+        <label for="azul">Azul</label>
+        <br>
+        <input type="checkbox" id="vermelho">
+        <label for="vermelho">Vermelho</label>
+    </form>
+
+    <br>
+
+    <form> 
+        <input type="radio" name="cores" id="amarelo"> <!-- Com o name declarado igual para todos não possibilita que marque mais de um -->
+        <label for="amarelo">Amarelo</label>
+        <br>
+        <input type="radio" name="cores" id="azul">
+        <label for="azul">Azul</label>
+        <br>
+        <input type="radio" name="cores" id="vermelho">
+        <label for="vermelho">Vermelho</label>
+    </form>
+
+    <br>
+
+    <form>
+        <label for="volume">Volume</label>
+        <input type="range" id="Volume" min="0" max="50" step="2">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Trabalhando com inputs avançados</h1>
+
+    <form>
+        <label for="cor">Selecione uma cor</label>
+        <input type="color" id="cor">
+        <br>
+        <label for="data">Selecione uma data</label>
+        <input type="date" id="data">
+        <br>
+        <input type="week" id="data">
+        <br>
+        <input type="hidden" id="data"> <!-- Esconde o input -->
+        <br>
+        <input type="search" name="Busca" id="busca">
+        <br>
+        <label for="nome">Nome</label>
+        <!-- <input type="text" id="nome" minlength="2" maxlength="5" placeholder="nome" size="8" disabled> -->
+        <input type="text" id="nome" placeholder="nome" size="8" required pattern="[0-9]{2,5}" title="Por favor, insira letra apenas"> <!-- Se eu quizer trabalhar com letra minusculas, maiusculas e com numeros: [a-zA-Z0-9]-->
+        <label for="tel">Telefone</label>
+        <input type="tel" id="tel" placeholder="(99)99999-9999" autofocus>
+        <br>
+        <button type="submit">enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
