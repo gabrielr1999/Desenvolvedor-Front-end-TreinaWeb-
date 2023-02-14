@@ -1,0 +1,91 @@
+/* p{
+    position: static;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border: solid 1px black;
+    position: fixed;
+    /* top: 10px; 
+    bottom: 10px;
+    left: 50%;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    border: solid 1px black;
+} */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: brown;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    font-style: 18px;
+    color: white;
+}
+
+.paragrafo{
+    margin-top: 70px;
+}
+
+.icone{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.sticky{
+    background-color: orangered;
+    position: sticky;
+    top: 60px;
+}
+
+.m-bottom{
+    margin-bottom: 2000px;
+}
+
+.box{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: solid 2px black;
+    position: relative;
+}
+
+.relative{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    position: relative; /* relative se basea na posição natural do elemento
+    /* top: 150px;*/
+    left: 50%; 
+}
+
+.absolute{
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    position: absolute; /* abosulte se base da tela do computador */
+    right: 170px;
+    top: 20px;
+    z-index: -4;
+}
+

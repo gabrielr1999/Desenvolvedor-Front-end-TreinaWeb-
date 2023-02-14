@@ -1,0 +1,38 @@
+/* div{ */
+    /* display: flex; O módulo de layout de caixa flexível torna mais fácil projetar uma estrutura de layout responsiva flexível sem usar flutuação ou posicionamento. */
+    
+    /* display: grid; O Módulo de layout de grade CSS oferece um sistema de layout baseado em grade, com linhas e colunas, facilitando o design de páginas da Web sem a necessidade de usar flutuações e posicionamento.
+    grid-template-columns: 1fr 1fr 1fr; */
+/* } */
+
+.inline span{
+    /* display: block; Exibe um elemento como um elemento de bloco (como <p>). Começa em uma nova linha e ocupa toda a largura */
+    /* display: inline;  Exibe um elemento como um elemento embutido (como <span>). Quaisquer propriedades de altura e largura não terão efeito */
+    display: inline;
+    background-color: aquamarine;
+    border: solid 1px black;
+    height: 200px; /* quando é inline não altera a altura */
+    width: 300px; /* quando é inline não altera a largura */
+    margin: 20px; /* consegue fazer o espaçamento externo */
+}
+
+.inline2 span{
+    display: inline-block; /* é mais maleável do que o inline */
+    background-color: aquamarine;
+    border: solid 1px black;
+    height: 100px; 
+    width: 300px; 
+    margin: 20px; 
+}
+
+.inline-flex span{
+    background-color: aquamarine;
+    border: solid 1px black;
+}
+.inline-flex{
+    display: inline-flex; /* mantem o box lado-a-lado mas como flex */ 
+}
+
+p{
+    display: none;
+}

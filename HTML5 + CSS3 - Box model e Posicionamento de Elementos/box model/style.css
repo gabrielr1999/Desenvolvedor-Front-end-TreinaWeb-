@@ -1,0 +1,61 @@
+.primeiro-exemplo{
+    width: 150px;
+    padding: 30px;
+    border: solid 2px black;
+    margin: 30px;
+}
+
+/* Margin */
+.segundo-exemplo{
+    width: 150px;
+    padding: 30px;
+    border: solid 2px black;
+    margin: 30px;
+    /* margin: 30px 15px; Em cima e embaixo são 30px. Nos lados são 15px; */
+    /* margin: 30px 15px 50px 20px; top -> right -> bottom -> left */
+    /* width: 150px;
+    padding: 30px;
+    border: solid 2px black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px; */
+    margin: auto; /* deixa a margin automatico */
+}
+
+/* border */
+.terceiro-exemplo{
+    width: 150px;
+    padding: 30px;
+    margin: 30px;
+    /* border: solid 2px black; */
+    border-style: dotted; /* solid - dotted - dashed - double - grouve - ridge - inset - outset - none */
+    border-width: 2px;
+    border-color: black;
+}
+
+/* padding */
+.quarto-exemplo{
+    width: 100%;
+    border: solid 2px black;
+    margin: 30px auto 50px auto;
+    background-color: forestgreen;
+
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px; */
+    padding: 20px 10px 20px 10px;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container p{
+    width: 100%;
+    min-width: 250px;
+    margin: 30px auto 50px auto;
+    border: solid 2px black;
+}
