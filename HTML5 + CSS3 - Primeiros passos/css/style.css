@@ -1,0 +1,21 @@
+body {
+    background-color: coral;
+}
+
+th, td, table {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+div {
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    margin: 200px;
+    /* margin-top: 200px;
+    margin-left: 200px; */
+    padding: 20px;
+}
